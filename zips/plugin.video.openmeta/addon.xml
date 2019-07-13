@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.openmeta" name="OpenMeta" version="1.1.3" provider-name="A4K">
+<addon id="plugin.video.openmeta" name="OpenMeta" version="1.1.4" provider-name="A4K">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="metadata.tvdb.com" version="3.0.14"/>
@@ -14,7 +14,11 @@
 	<extension point="kodi.context.item">
 		<menu id="kodi.core.main">
 			<item library="context.py">
-				<label>OpenMeta</label>
+				<label>Use OpenMeta Default Player</label>
+				<visible>!String.StartsWith(ListItem.path,plugin://plugin.video.openmeta/)+[String.IsEqual(ListItem.dbtype,episode)|String.IsEqual(ListItem.dbtype,movie)]</visible>
+			</item>
+			<item library="context2.py">
+				<label>Choose OpenMeta Player</label>
 				<visible>String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)</visible>
 			</item>
 		</menu>
@@ -34,6 +38,6 @@
 		<forum></forum>
 		<website></website>
 		<source></source>
-		<news></news>
+		<news>1.1.4 - Added default players</news>
 	</extension>
 </addon>
