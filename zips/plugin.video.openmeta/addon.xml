@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.openmeta" name="OpenMeta" version="1.1.6" provider-name="A4K">
+<addon id="plugin.video.openmeta" name="OpenMeta" version="1.1.7" provider-name="A4K">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="metadata.tvdb.com" version="3.0.14"/>
@@ -14,11 +14,11 @@
 	<extension point="kodi.context.item">
 		<menu id="kodi.core.main">
 			<item library="context.py">
-				<label>Use OpenMeta Default Player</label>
+				<label>OpenMeta - Default Player</label>
 				<visible>!String.StartsWith(ListItem.path,plugin://plugin.video.openmeta/)+[String.IsEqual(ListItem.dbtype,episode)|String.IsEqual(ListItem.dbtype,movie)]</visible>
 			</item>
 			<item library="context2.py">
-				<label>Choose OpenMeta Player</label>
+				<label>OpenMeta - Choose Player</label>
 				<visible>String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,episode)</visible>
 			</item>
 		</menu>
@@ -38,6 +38,6 @@
 		<forum></forum>
 		<website></website>
 		<source></source>
-		<news>1.1.6 - Add setting to flatten seasons, add Trakt Recommendations, and add missing info on some menus.</news>
+		<news>1.1.7 - Fix positioning on context menu items.</news>
 	</extension>
 </addon>
