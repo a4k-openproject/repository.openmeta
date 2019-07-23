@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.openmeta" name="OpenMeta" version="1.1.7" provider-name="A4K">
+<addon id="plugin.video.openmeta" name="OpenMeta" version="1.2.0" provider-name="A4K">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="metadata.tvdb.com" version="3.0.14"/>
@@ -38,6 +38,6 @@
 		<forum></forum>
 		<website></website>
 		<source></source>
-		<news>1.1.7 - Fix positioning on context menu items.</news>
+		<news>1.2.0 - Added "special" seasons.</news>
 	</extension>
 </addon>
