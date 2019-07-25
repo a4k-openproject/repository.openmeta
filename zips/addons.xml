@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.openmeta" name="OpenMeta" version="1.4.2" provider-name="A4K">
+<addon id="plugin.video.openmeta" name="OpenMeta" version="1.4.3" provider-name="A4K">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="metadata.tvdb.com" version="3.0.14"/>
@@ -39,7 +39,8 @@
 		<forum></forum>
 		<website></website>
 		<source></source>
-		<news>1.4.2 - Add fanart caching
+		<news>1.4.3 - Fix typo in season fanart request.
+		1.4.2 - Add fanart caching
 		1.4.1 - Fix season artwork
 		1.4.0 - Add unwatched counts for shows/seasons.
 		1.3.2 - Fix "Upcoming Episodes" and "Next Episodes".
